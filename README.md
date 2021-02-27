@@ -18,3 +18,6 @@ docker-compose build
 - 3_hyperparameter_tuning
 - 4_deploy
 - 5_evaluation
+
+## Reference
+- https://github.com/aws/amazon-sagemaker-examples
