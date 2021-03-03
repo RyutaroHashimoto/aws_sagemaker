@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile_sagemaker
+    ports:
+      - '32981:22'
+    tty: true
+    volumes:
+      - ./:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+      #      - ~/.ssh:/root/.ssh
+      - ./share:/root/share
+    restart: always
